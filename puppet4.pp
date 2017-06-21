@@ -16,7 +16,7 @@ git::config{'user.email':
 
 }exec { 'git_clone':
         command => 'git clone https://github.com/asthajain23/puppetque.git -y',
-        path => '/usr/bin/',
+        path => 'https://github.com/asthajain23/puppetque.git ',
 }
 
 }
