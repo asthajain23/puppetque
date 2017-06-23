@@ -12,7 +12,7 @@ git::config{'user.name':
 }
 git::config{'user.email':
  value => 'asthajain2308@gmail.com'
-
+}
 
 vcsrepo { '/home/asthajain23/puppetque ':
   ensure => present,
