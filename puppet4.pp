@@ -1,4 +1,4 @@
-#Write a script which will configure a git and clone some repository through it.
+puppetque #Write a script which will configure a git and clone some repository through it.
 
 class git { 
 exec { 'git':
@@ -14,9 +14,10 @@ git::config{'user.email':
  value => 'asthajain2308@gmail.com'
 
 
-}exec { 'git_clone':
-        command => 'git clone https://github.com/asthajain23/puppetque.git -y',
-        path => 'https://github.com/asthajain23/puppetque.git ',
+vcsrepo { '/home/asthajain23/puppetque ':
+  ensure => present,
+  provider => git,
+  source => 'https://github.com/asthajain23/puppetque.git',
 }
 
 }
