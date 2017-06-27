@@ -10,10 +10,11 @@ file{'/root/puppetfile1.txt':
 }
  #absent is used to delete file
  
+ 
+ '''Output
  [root@demo1 manifests]# puppet apply puppet1.pp
  Notice: Compiled catalog for demo1.c.skilful-tiger-169411.internal in environment production in 0.16 seconds
  Notice: Finished catalog run in 0.02 seconds
  
  [root@demo1 ~]# ls | grep puppet
- puppetfile1.txt
- 
+ puppetfile1.txt  '''
